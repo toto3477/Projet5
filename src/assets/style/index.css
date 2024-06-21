@@ -1,0 +1,218 @@
+body {
+  margin: 0 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.DivBanniereAccueil {
+  width: 100%;
+}
+.DivBanniereAccueil .BanniereTexte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/BanniereAccueil.png") no-repeat center;
+  background-size: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.DivBanniereApropos {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/BanniereApropos.png") no-repeat center;
+  background-size: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+header img {
+  pointer-events: none;
+  width: 100px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header div a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.6rem;
+  padding-left: 20px;
+}
+header div a.active {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+header div a li {
+  display: inline;
+}
+
+.annonces {
+  background: rgb(245, 243, 243);
+  border-radius: 10px;
+  width: 100%;
+}
+.annonces div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.annonces div article {
+  width: 110px;
+  height: 110px;
+  padding: 5px;
+  position: relative;
+}
+.annonces div article img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.annonces div article h2 {
+  font-size: 0.5em;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  color: white;
+  -webkit-text-stroke: 0.1px black;
+}
+
+.footer {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -30px;
+  padding: 20px;
+}
+.footer img {
+  width: 110px;
+}
+.footer p {
+  color: white;
+  font-size: 0.6rem;
+}
+
+.aproposContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.aproposContent .section {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.aproposContent .section button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FF6060;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: left;
+}
+.aproposContent .section button span {
+  cursor: pointer;
+  margin-left: auto;
+}
+.aproposContent .section p {
+  font-size: 0.6rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin: 0;
+  display: none;
+}
+.aproposContent .section.active p {
+  display: block;
+}
+.aproposContent .section.active button span {
+  transform: rotate(180deg);
+  transition: transform 0.4s;
+}
+
+.messageErreur {
+  text-align: center;
+  margin-top: -50px;
+}
+.messageErreur h1 {
+  color: #FF6060;
+  font-size: 6rem;
+}
+.messageErreur h2 {
+  color: #FF6060;
+}
+.messageErreur p {
+  color: black;
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+.card .cardcontent .cardheader {
+  display: flex;
+  justify-content: space-between;
+}
+.card .cardcontent .cardheader .cardtitle {
+  width: 50%;
+}
+.card .cardcontent .cardheader .cardtitle h2 {
+  font-size: 1.1rem;
+  color: #FF6060;
+}
+.card .cardcontent .cardheader .cardtitle p {
+  font-size: 0.8rem;
+}
+.card .cardcontent .cardheader .cardtitle .cardtags span {
+  background-color: #FF6060;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  padding: 0 5px;
+  margin: 5px;
+}
+.card .cardcontent .cardheader .cardhost {
+  width: 50%;
+  text-align: end;
+}
+.card .cardcontent .cardheader .cardhost p {
+  color: #FF6060;
+}
+.card .cardcontent .cardheader .cardhost img {
+  display: inline;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+.annonces {
+    background: $color1;
+    border-radius: 10px;
+    width: 100%;
+    
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin-bottom: 10px;
+
+        article {
+
+            width: 110px;
+            height: 110px;
+            padding: 5px;
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                
+            }
+            h2 {
+                font-size: 0.5em;
+                position: absolute;
+                top: 70%;
+                left: 10%;
+                color: white;
+                -webkit-text-stroke: 0.1px black;
+
+      
+            }
+        }
+    }
+}
