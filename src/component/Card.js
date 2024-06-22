@@ -1,10 +1,11 @@
 import React from 'react';
+import Collapse from "./Collapse"
 
 const Card = ({ annonce }) => {
     if (!annonce) return <redirect to="/Erreur" />
 
     return (
-<div className='card'>
+        <div className='card'>
             <div className='cardimage'>
                 <img src={annonce.cover || annonce.pictures[0]} alt={annonce.title} />
             </div>
@@ -31,21 +32,18 @@ const Card = ({ annonce }) => {
                         </div>
                     </div>
                 </div>
-                <div className='carddescription'>
+                <div className='cardcollapse'>
+                    <Collapse title="Description">
                     <p>{annonce.description}</p>
-                </div>
-                {annonce.equipments && Array.isArray(annonce.equipments) ? (
-                    <div className='cardequipments'>
-                        <h3>Équipements</h3>
+                    </Collapse>
+                    <Collapse title="Equipements">
                         <ul>
                             {annonce.equipments.map((equipment, index) => (
                                 <li key={index}>{equipment}</li>
                             ))}
                         </ul>
-                    </div>
-                ) : (
-                    <p>Pas d'équipements disponibles</p>
-                )}
+                    </Collapse>
+                </div>
             </div>
         </div>
     );

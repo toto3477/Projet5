@@ -178,7 +178,7 @@ header div a li {
   flex-direction: column;
   border-radius: 10px;
 }
-.card img {
+.card .cardimage img {
   width: 100%;
   height: 180px;
   border-radius: 10px;
@@ -188,30 +188,66 @@ header div a li {
   justify-content: space-between;
 }
 .card .cardcontent .cardheader .cardtitle {
-  width: 50%;
+  width: 100%;
 }
 .card .cardcontent .cardheader .cardtitle h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #FF6060;
+  margin: 0;
 }
 .card .cardcontent .cardheader .cardtitle p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+.card .cardcontent .cardheader .cardtitle .cardtags {
+  display: flex;
 }
 .card .cardcontent .cardheader .cardtitle .cardtags span {
+  padding: 2px 15px;
+  margin-right: 5px;
   background-color: #FF6060;
   color: white;
-  border-radius: 5px;
-  font-size: 0.7rem;
-  padding: 0 5px;
-  margin: 5px;
+  border-radius: 10px;
+  font-size: 0.6rem;
 }
 .card .cardcontent .cardheader .cardhost {
   width: 50%;
   text-align: end;
 }
-.card .cardcontent .cardheader .cardhost p {
+.card .cardcontent .cardheader .cardhost .host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card .cardcontent .cardheader .cardhost .host p {
+  color: #FF6060;
+  width: 20%;
+  padding-right: 10px;
+  font-size: 0.7rem;
+}
+.card .cardcontent .cardheader .cardhost .host img {
+  height: 40px;
+  border-radius: 20px;
+}
+.card .cardcontent .cardheader .cardhost .cardrating .star {
+  color: gray;
+}
+.card .cardcontent .cardheader .cardhost .cardrating .star.filled {
   color: #FF6060;
 }
-.card .cardcontent .cardheader .cardhost img {
-  display: inline;
+.card .cardcontent .cardcollapse {
+  display: flex;
+  font-size: 0.6rem;
+}
+.card .cardcontent .cardcollapse .collapse {
+  padding: 5px;
+}
+.card .cardcontent .cardcollapse .collapse-content {
+  width: 90%;
+}
+.card .cardcontent .cardcollapse .collapse-content ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+.card .cardcontent .cardcollapse .collapse-content ul li {
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
