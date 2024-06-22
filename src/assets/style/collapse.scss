@@ -1,15 +1,16 @@
-.aproposContent {
+
+.collapse {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     margin: 0 auto;
 
-    .section {
+    .collapse-header {
         width: 100%;
         margin-bottom: 10px;
 
-        button {
+        .collapse-button {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -21,35 +22,22 @@
             font-size: 0.8rem;
             width: 100%;
             text-align: left;
-            
-            
-            
-            
+
             span {
                 cursor: pointer;
                 margin-left: auto;
             }
-        }
-        
-        p {
-            font-size: 0.6rem;
-            padding: 10px 20px;
-            border-radius: 2px;
-            margin: 0;
-            display: none;
-        }
-        
-        &.active p {
-            display: block;
-        }
-        &.active button span {
-            transform: rotate(180deg);
-            transition: transform 0.4s;
 
+            &.active span {
+                transform: rotate(180deg);
+                transition: transform 0.4s;
+            }
         }
-
-
+    }
+    .collapse-content {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
     }
 }
-
-

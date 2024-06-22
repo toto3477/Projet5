@@ -1,0 +1,14 @@
+.aproposContent {
+
+    p {
+        font-size: 0.6rem;
+        padding: 10px 20px;
+        border-radius: 2px;
+        margin: 0;
+        display: none;
+    }
+    
+    &.active p {
+        display: block;
+    }
+}
