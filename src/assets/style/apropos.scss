@@ -1,14 +1,13 @@
 .aproposContent {
+    .collapse {
+        margin-bottom: 20px; // Ajout d'une marge entre les sections collapsibles
 
-    p {
-        font-size: 0.6rem;
-        padding: 10px 20px;
-        border-radius: 2px;
-        margin: 0;
-        display: none;
-    }
-    
-    &.active p {
-        display: block;
+        .collapse-content {
+            p {
+                font-size: 0.6rem;
+                padding: 0 5px;
+                margin: 0;
+            }
+        }
     }
 }

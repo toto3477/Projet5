@@ -114,18 +114,27 @@ header div a li {
   font-size: 0.6rem;
 }
 
-.aproposContent {
+.aproposContent .collapse {
+  margin-bottom: 20px;
+}
+.aproposContent .collapse .collapse-content p {
+  font-size: 0.6rem;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.collapse {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: 0 auto;
 }
-.aproposContent .section {
+.collapse .collapse-header {
   width: 100%;
   margin-bottom: 10px;
 }
-.aproposContent .section button {
+.collapse .collapse-header .collapse-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,23 +147,13 @@ header div a li {
   width: 100%;
   text-align: left;
 }
-.aproposContent .section button span {
+.collapse .collapse-header .collapse-button span {
   cursor: pointer;
   margin-left: auto;
-}
-.aproposContent .section p {
-  font-size: 0.6rem;
-  padding: 10px 20px;
-  border-radius: 2px;
-  margin: 0;
-  display: none;
-}
-.aproposContent .section.active p {
-  display: block;
-}
-.aproposContent .section.active button span {
-  transform: rotate(180deg);
   transition: transform 0.4s;
+}
+.collapse .collapse-header .collapse-button.active span {
+  transform: rotate(180deg);
 }
 
 .messageErreur {

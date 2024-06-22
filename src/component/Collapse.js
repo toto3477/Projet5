@@ -11,9 +11,9 @@ const Collapse = ({ title, children }) => {
 
     return (
         <div className={`collapse ${isOpen ? 'open' : ''}`}>
-            <div className="collapse-header" onClick={toggleCollapse}>
-                <button className="collapse-button">{title}
-                    <span>{isOpen ? 'Λ' : 'Λ'}</span>
+            <div className="collapse-header" >
+            <button className={`collapse-button ${isOpen ? 'active' : ''}`}>{title}
+                    <span onClick={toggleCollapse}>{isOpen ? 'Λ' : 'Λ'}</span>
                 </button>
             </div>
             {isOpen && <div className="collapse-content">{children}</div>}
