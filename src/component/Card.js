@@ -1,5 +1,6 @@
 import React from 'react';
 import Collapse from "./Collapse"
+import Slideshow from './Slideshow';
 
 const Card = ({ annonce }) => {
     if (!annonce) return <redirect to="/Erreur" />
@@ -7,7 +8,7 @@ const Card = ({ annonce }) => {
     return (
         <div className='card'>
             <div className='cardimage'>
-                <img src={annonce.cover || annonce.pictures[0]} alt={annonce.title} />
+                <Slideshow pictures={annonce.pictures} />
             </div>
             <div className='cardcontent'>
                 <div className='cardheader'>
@@ -33,7 +34,7 @@ const Card = ({ annonce }) => {
                     </div>
                 </div>
                 <div className='cardcollapse'>
-                    <Collapse title="Description">
+                    <Collapse title="Description" className="collapsedescription">
                     <p>{annonce.description}</p>
                     </Collapse>
                     <Collapse title="Equipements">

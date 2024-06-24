@@ -6,7 +6,7 @@
 
     .cardimage img {
         width: 100%;
-        height: auto;
+        height: 160px;
         border-radius: 10px;
     }
 
@@ -76,6 +76,10 @@
         .cardcollapse {
             display: flex;
             font-size: 0.6rem;
+
+            .collapsedescription {
+                align-items: flex-start;
+            }
 
             .collapse {
                 padding: 5px;

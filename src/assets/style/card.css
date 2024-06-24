@@ -5,7 +5,7 @@
 }
 .card .cardimage img {
   width: 100%;
-  height: auto;
+  height: 160px;
   border-radius: 10px;
 }
 .card .cardcontent .cardheader {
@@ -65,6 +65,9 @@
 .card .cardcontent .cardcollapse {
   display: flex;
   font-size: 0.6rem;
+}
+.card .cardcontent .cardcollapse .collapsedescription {
+  align-items: flex-start;
 }
 .card .cardcontent .cardcollapse .collapse {
   padding: 5px;
