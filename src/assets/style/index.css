@@ -65,10 +65,22 @@ header div a li {
   display: inline;
 }
 
+body {
+  margin: 0 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
 .annonces {
   background: rgb(245, 243, 243);
   border-radius: 10px;
   width: 100%;
+  max-width: 1440px;
 }
 .annonces div {
   display: flex;
@@ -78,9 +90,12 @@ header div a li {
   padding: 5px;
   margin-bottom: 10px;
 }
+.annonces div .bouton {
+  width: 30%;
+}
 .annonces div article {
-  width: 110px;
-  height: 110px;
+  width: 100%;
+  height: 220px;
   position: relative;
 }
 .annonces div article img {
@@ -89,9 +104,9 @@ header div a li {
   border-radius: 10px;
 }
 .annonces div article h2 {
-  font-size: 0.5em;
+  font-size: 0.6em;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 10%;
   color: white;
   -webkit-text-stroke: 0.1px black;
@@ -120,6 +135,17 @@ header div a li {
   font-size: 0.6rem;
   padding: 0 5px;
   margin: 0;
+}
+
+body {
+  margin: 0 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .collapse {
@@ -264,11 +290,6 @@ header div a li {
   overflow: hidden;
   border-radius: 10px;
 }
-.slideshow img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 .slideshow .left-arrow, .slideshow .right-arrow {
   position: absolute;
   top: 50%;
@@ -291,10 +312,9 @@ header div a li {
 .slideshow .slide-number {
   position: absolute;
   bottom: 8px;
-  right: 16px;
+  right: 45%;
   color: white;
   font-size: 12px;
   padding: 8px 12px;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 3px;
 }/*# sourceMappingURL=index.css.map */

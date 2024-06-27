@@ -33,7 +33,7 @@ const Annonces = () => {
             <div>
                 {data.length > 0 ? (
                     data.map((annonce, index) => (
-                        <div key={index} onClick={() => handleClick(annonce.id)}>
+                        <div className='bouton' key={index} onClick={() => handleClick(annonce.id)}>
                             <article className='annonceCard'>
                                 <img src={annonce.cover || annonce.picture} alt={annonce.title} />
                                 <h2>{annonce.title}</h2>

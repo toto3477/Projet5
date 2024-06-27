@@ -5,6 +5,7 @@ import axios from 'axios';
 import Header from '../component/Header';
 import Card from '../component/Card';
 import Footer from '../component/Footer';
+import Erreur from './Erreur'
 
 const DescriptionCard = () => {
     const { id } = useParams();
@@ -28,11 +29,11 @@ const DescriptionCard = () => {
     }, [id]);
 
     if (error) {
-        return <redirect to="/Erreur" />;
+        return <Erreur />
     }
-
+    
     if (!annonce) {
-        return <p>Chargement...</p>;
+        return <Erreur />
     }
 
     return (
