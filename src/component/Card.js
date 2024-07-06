@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as fasFaStar } from '@fortawesome/free-solid-svg-icons';
 import Collapse from "./Collapse"
 import Slideshow from './Slideshow';
 
@@ -28,7 +30,11 @@ const Card = ({ annonce }) => {
                         </div>
                         <div className='cardrating'>
                             {[...Array(5)].map((_, index) => (
-                                <span key={index} className={`star ${index < annonce.rating ? 'filled' : ''}`}>★</span>
+                                <FontAwesomeIcon
+                                key={index}
+                                icon={index < annonce.rating ? fasFaStar : fasFaStar}
+                                className={index < annonce.rating ? 'fa-star filled' : 'fa-star'}
+                            />
                             ))}
                         </div>
                     </div>

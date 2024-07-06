@@ -11,7 +11,6 @@ const Annonces = () => {
         axios
             .get('../annonces.json')
             .then((res) => {
-                console.log('Données récupérées :', res.data);
                 setData(res.data);
             })
             .catch((err) => {

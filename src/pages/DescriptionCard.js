@@ -1,6 +1,6 @@
 // src/pages/DescriptionCard.js
 import React, { useEffect, useState } from 'react';
-import { useParams, redirect } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Header from '../component/Header';
 import Card from '../component/Card';

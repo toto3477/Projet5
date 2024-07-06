@@ -6,10 +6,10 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-
+    
     .collapse-header {
         width: 100%;
-
+        
         .collapse-button {
             display: flex;
             justify-content: space-between;
@@ -22,7 +22,7 @@
             font-size: 0.8rem;
             width: 100%;
             text-align: left;
-
+            
             span {
                 cursor: pointer;
                 margin-left: auto;
@@ -34,6 +34,7 @@
             }
         }
     }
-
-
+    
+    
 }
+

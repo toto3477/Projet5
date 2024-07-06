@@ -13,7 +13,9 @@ const Collapse = ({ title, children }) => {
         <div className={`collapse ${isOpen ? 'open' : ''}`}>
             <div className="collapse-header" >
             <button className={`collapse-button ${isOpen ? 'active' : ''}`}>{title}
-                    <span onClick={toggleCollapse}>{isOpen ? 'Λ' : 'Λ'}</span>
+            <span onClick={toggleCollapse} className="material-symbols-outlined">
+            {isOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_up'}
+            </span>
                 </button>
             </div>
             {isOpen && <div className="collapse-content">{children}</div>}

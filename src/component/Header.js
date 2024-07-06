@@ -9,10 +9,10 @@ function Header() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className='App-link'>
           <ul>
-            <NavLink exact to="/" activeClassName="active">      
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>      
             <li>Accueil</li>
             </NavLink>   
-            <NavLink to="/Apropos" activeClassName="active">
+            <NavLink to="/Apropos" className={({ isActive }) => (isActive ? 'active' : '')}>
             <li>A propos</li>
             </NavLink>   
           </ul>

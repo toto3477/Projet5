@@ -1,12 +1,17 @@
+@import "./settings.scss";
+
 .aproposContent {
     .collapse {
-        margin-bottom: 20px; // Ajout d'une marge entre les sections collapsibles
+        width: 70%;
+        margin-bottom: 10px;
 
         .collapse-content {
+            background-color: $color1;;
             p {
-                font-size: 0.6rem;
-                padding: 0 5px;
+                font-size: 0.7rem;
+                padding: 10px;
                 margin: 0;
+                text-align: center;
             }
         }
     }
