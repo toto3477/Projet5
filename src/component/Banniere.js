@@ -1,4 +1,5 @@
 import React from 'react';
+import "../assets/style/Banniere.scss";
 
 function BanniereAccueil () {
     return (

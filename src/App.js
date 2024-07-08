@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Apropos from "./pages/Apropos"
 import Erreur from "./pages/Erreur"
 import DescriptionCard from './pages/DescriptionCard';
+import "./assets/style/settings.scss";
 
 const App = () => {
   return (

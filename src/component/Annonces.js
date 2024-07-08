@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import "../assets/style/annonces.scss";
 
 const Annonces = () => {
     const [data, setData] = useState([]);
@@ -15,7 +16,6 @@ const Annonces = () => {
             })
             .catch((err) => {
                 setError(err);
-                <redirect to="/Erreur" />
             });
     }, []);
 

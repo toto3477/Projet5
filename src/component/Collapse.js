@@ -1,11 +1,10 @@
-// src/components/Collapse.js
 import React, { useState } from 'react';
-
+import "../assets/style/collapse.scss";
 
 const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleCollapse = () => {
+    const ChangementEtatCollapse = () => {
         setIsOpen(!isOpen);
     };
 
@@ -13,7 +12,7 @@ const Collapse = ({ title, children }) => {
         <div className={`collapse ${isOpen ? 'open' : ''}`}>
             <div className="collapse-header" >
             <button className={`collapse-button ${isOpen ? 'active' : ''}`}>{title}
-            <span onClick={toggleCollapse} className="material-symbols-outlined">
+            <span onClick={ChangementEtatCollapse} className="material-symbols-outlined">
             {isOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_up'}
             </span>
                 </button>

@@ -1,6 +1,7 @@
 // src/components/AProposContent.js
 import React from 'react';
 import Collapse from './Collapse';
+import "../assets/style/apropos.scss";
 
 const AProposContent = () => {
     return (

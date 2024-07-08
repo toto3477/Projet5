@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as fasFaStar } from '@fortawesome/free-solid-svg-icons';
 import Collapse from "./Collapse"
 import Slideshow from './Slideshow';
+import "../assets/style/card.scss";
 
 const Card = ({ annonce }) => {
     if (!annonce) return <redirect to="/Erreur" />

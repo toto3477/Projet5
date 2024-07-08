@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../assets/style/slideshow.scss";
 
 const Slideshow = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +23,7 @@ const Slideshow = ({ pictures }) => {
     return (
         <div className="slideshow">
             <button className="left-arrow" onClick={goToPrevious}>&#10094;</button>
-            <img src={pictures[currentIndex]} alt={`slide ${currentIndex + 1}`} />
+            <img src={pictures[currentIndex]} />
             <button className="right-arrow" onClick={goToNext}>&#10095;</button>
             <div className="slide-number">{currentIndex + 1} / {pictures.length}</div>
         </div>
